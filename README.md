@@ -2,10 +2,6 @@
 
 An Admin dashboard for booking, account information and more with login and register functionalities.
 
-## Demo
-
-https://whatsbulk.vercel.app/dashboard
-
 ## Features
 
 - Login
