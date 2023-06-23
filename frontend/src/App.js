@@ -17,7 +17,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const Protected = ({ isLoggedIn, children }) => {
-    console.log(isLoggedIn);
 
     if (!isLoggedIn) {
       return <Navigate to="/login" />;
@@ -32,7 +31,6 @@ function App() {
       return false;
     }
   };
-
   return (
     <>
       <div className="">
