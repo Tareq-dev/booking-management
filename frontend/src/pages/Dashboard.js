@@ -36,23 +36,13 @@ function Dashboard() {
               </NavLink>
             </li>
 
-            <li>
-              <NavLink className="py-2" to="/dashboard/account">
-                <BsCurrencyRupee className="mr-2 mb-1 inline" size={20} />{" "}
-                Account
-              </NavLink>
-            </li>
 
             <li>
               <NavLink className="py-2" to="/dashboard/form">
                 <FaWpforms className="mr-2 mb-1 inline" size={20} /> Form
               </NavLink>
             </li>
-            <li>
-              <NavLink className="py-2" to="/dashboard/report">
-                <GoReport className="mr-2 mb-1 inline" size={20} /> Report
-              </NavLink>
-            </li>
+         
             <li>
               <NavLink className="py-2" to="/dashboard/menu">
                 <CiMenuKebab className="mr-2 mb-1 inline" size={20} /> Menu
@@ -86,22 +76,14 @@ function Dashboard() {
             </NavLink>
           </li>
 
-          <li>
-            <NavLink className="py-2 px-10" to="/dashboard/account">
-              <BsCurrencyRupee className="mr-2 mb-1 inline" size={20} /> Account
-            </NavLink>
-          </li>
+     
 
           <li>
             <NavLink className="py-2 px-10" to="/dashboard/form">
               <FaWpforms className="mr-2 mb-1 inline" size={20} /> Form
             </NavLink>
           </li>
-          <li>
-            <NavLink className="py-2 px-10" to="/dashboard/report">
-              <GoReport className="mr-2 mb-1 inline" size={20} /> Report
-            </NavLink>
-          </li>
+         
           <li>
             <NavLink className="py-2 px-10" to="/dashboard/menu">
               <CiMenuKebab className="mr-2 mb-1 inline" size={20} /> Menu

@@ -18,6 +18,8 @@ function BookingForm({ booking, setBooking, editMode, mode, formData }) {
       Number(data.grossAmt) +
       Number(data.insuranceAmt) +
       Number(data.percelAmt);
+
+      
     const formData = {
       id: Date.now(),
       date: startDate,
@@ -35,7 +37,6 @@ function BookingForm({ booking, setBooking, editMode, mode, formData }) {
       sender: data?.sender,
       weight: data?.weight,
     };
-    console.log(formData);
     const newFormArray = [...filterItem, formData];
     localStorage.setItem("booking", JSON.stringify(newFormArray));
     if (newFormArray) {
