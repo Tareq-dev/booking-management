@@ -102,7 +102,7 @@ function Dashboard() {
         </ul>
       </div>
 
-      <div className="drawer drawer-mobile bg-[#F9FAFB]">
+      <div className="drawer drawer-mobile bg-[#F9FAFB] px-2">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content text-black flex flex-col">
           <Outlet></Outlet>

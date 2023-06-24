@@ -55,8 +55,8 @@ function BookingForm({ booking, setBooking, editMode, mode, formData }) {
     <section
       className={
         editMode
-          ? "md:w-2/5 bg-blueGray-50 border-4 border-orange-400 md:mr-8 my-8"
-          : "md:w-2/5 bg-blueGray-50 border-t-4 border-orange-400 md:mr-8 my-8"
+          ? "md:w-2/5 bg-blueGray-50 border-4 border-orange-400 md:mr-8 my-8 md:my-0"
+          : "md:w-2/5 bg-blueGray-50 border-t-4 border-orange-400 md:mr-8 my-8 md:my-0"
       }
     >
       <div className="flex-auto px-4 py-2 bg-white">
