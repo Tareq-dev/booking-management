@@ -19,7 +19,6 @@ function BookingForm({ booking, setBooking, editMode, mode, formData }) {
       Number(data.insuranceAmt) +
       Number(data.percelAmt);
 
-      
     const formData = {
       id: Date.now(),
       date: startDate,
@@ -56,8 +55,8 @@ function BookingForm({ booking, setBooking, editMode, mode, formData }) {
     <section
       className={
         editMode
-          ? "md:w-2/5 bg-blueGray-50 border-4 border-orange-400 mr-8"
-          : "md:w-2/5 bg-blueGray-50 border-t-4 border-orange-400 mr-8"
+          ? "md:w-2/5 bg-blueGray-50 border-4 border-orange-400 md:mr-8 my-8"
+          : "md:w-2/5 bg-blueGray-50 border-t-4 border-orange-400 md:mr-8 my-8"
       }
     >
       <div className="flex-auto px-4 py-2 bg-white">
@@ -122,7 +121,7 @@ function BookingForm({ booking, setBooking, editMode, mode, formData }) {
                 )}
               </div>
             </div>
-            <div className="flex w-full">
+            <div className="md:flex w-full">
               <div className="md:w-2/3 px-4">
                 <div className="relative w-full mb-3">
                   <input
@@ -140,7 +139,7 @@ function BookingForm({ booking, setBooking, editMode, mode, formData }) {
                   )}
                 </div>
               </div>
-              <div className="md:w-1/3 md:px-4 md:mr-7">
+              <div className="md:w-1/3 md:px-4 ml-4 md:mr-7">
                 <div className="relative w-full mb-3">
                   <input
                     type="text"
@@ -171,13 +170,13 @@ function BookingForm({ booking, setBooking, editMode, mode, formData }) {
                 >
                   Carrier
                 </label>
-                <div className="flex">
-                  <div className=" w-2/5">
+                <div className="md:flex">
+                  <div className="md:w-2/5">
                     <input
                       type="text"
                       {...register("carrier", { required: true })}
                       aria-invalid={errors.carrier ? "true" : "false"}
-                      className="border-l-4 outline-none border border-l-red-500 px-3 py-2  text-gray-500 rounded text-sm "
+                      className="border-l-4 w-full md:w-4/5 mb-2 md:mb-4 outline-none border border-l-red-500 px-3 py-2  text-gray-500 rounded text-sm "
                       defaultValue={editMode ? formData.carrier : ""}
                     />
                     {errors.carrier?.type === "required" && (
@@ -186,7 +185,7 @@ function BookingForm({ booking, setBooking, editMode, mode, formData }) {
                       </p>
                     )}
                   </div>
-                  <div className="w-3/5">
+                  <div className="md:w-3/5">
                     <input
                       type="text"
                       {...register("consignment", { required: true })}
@@ -253,7 +252,7 @@ function BookingForm({ booking, setBooking, editMode, mode, formData }) {
             </div>
           </div>
 
-          <div className="flex px-4">
+          <div className="md:flex px-4">
             <div className="w-3/4 mr-4">
               <input
                 type="text"
@@ -262,7 +261,7 @@ function BookingForm({ booking, setBooking, editMode, mode, formData }) {
                 value="GROSS Amt"
               />
             </div>
-            <div className=" w-1/4">
+            <div className="mt-3 md:mt-0 md:w-1/4">
               <input
                 type="number"
                 {...register("grossAmt", {
@@ -289,7 +288,7 @@ function BookingForm({ booking, setBooking, editMode, mode, formData }) {
               >
                 Other Charge
               </label>
-              <div className="flex">
+              <div className="md:flex">
                 <div className="w-3/4 mr-4">
                   <input
                     type="text"
@@ -298,7 +297,7 @@ function BookingForm({ booking, setBooking, editMode, mode, formData }) {
                     value="Insurance Amt"
                   />
                 </div>
-                <div className=" w-1/4">
+                <div className="mt-3 md:mt-0 md:w-1/4">
                   <input
                     type="number"
                     {...register("insuranceAmt", {
@@ -317,7 +316,7 @@ function BookingForm({ booking, setBooking, editMode, mode, formData }) {
                 </div>
               </div>
 
-              <div className="flex mt-4">
+              <div className="md:flex mt-4">
                 <div className="w-3/4 mr-4">
                   <input
                     type="text"
@@ -326,7 +325,7 @@ function BookingForm({ booking, setBooking, editMode, mode, formData }) {
                     value="Percel  value"
                   />
                 </div>
-                <div className=" w-1/4">
+                <div className="mt-3 md:mt-0 md:w-1/4">
                   <input
                     type="number"
                     {...register("percelAmt", {

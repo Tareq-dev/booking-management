@@ -25,7 +25,7 @@ function Dashboard() {
             className="menu menu-compact dropdown-content p-2 shadow bg-base-100 rounded w-52"
           >
             <li>
-              <NavLink className="my-2 mr-1" to="/dashboard">
+              <NavLink className="my-2 mr-1" to="/">
                 <ImHome className="mr-2 mb-1 inline" size={20} /> Home
               </NavLink>
             </li>
@@ -65,7 +65,7 @@ function Dashboard() {
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
         <ul className="flex justify-center items-center py-4 bg-[#B66DFF] text-white ">
           <li>
-            <NavLink className="py-2 px-10 mr-1" to="/dashboard">
+            <NavLink className="py-2 px-10 mr-1" to="/">
               <ImHome className="mr-2 mb-1 inline" size={20} /> Home
             </NavLink>
           </li>
